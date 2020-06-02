@@ -3,64 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!---->
     <link rel="stylesheet" href="style.css">
     <!--font awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <!--barra de navegacion-->
-            <nav id="navbar">
-                    <img src="imgs/Cartoon.jpg" class="img-perfil">
-                    <ul>
-                        <li id="lista1"><a class="nav-link" href="#welcome-section"> Home</a></li>
-                        <li id="lista2"><a class="nav-link" href="#welcome-section"> Welcome </a></li><!--mismo link-->
-                        <li id="lista3"><a class="nav-link" href="#projects"> Projects </a></li>
-                    </ul>
-            </nav>
-            <hr>
-        </header>
-        <!--SECCION DE BIENVENIDA-->
+    <!--barra de navegacion-->
+    <header class="container navbar">
+        <div class="lgo">
+            <h1>Portfolio Web</h1><!--aqui va algo referente al logo-->
+        </div>
 
-        <section id="welcome-section">
-            <h1>welcome</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quod doloremque minima molestiae, voluptas odit!</p>
-            <a href="#" class="btn">Read More <i class="fas fa-angle-double-right"></i></a>
-        </section>
+        <nav>
+            <ul>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#skills">skills</a></li>
+                <li><a href="#work">My work</a></li>
+            </ul>
+        </nav> 
+    </header>
 
-        <!--PROYECTOS-->
-        <section id="projects">
-            <div class="project-tile">
+        
+    <!--SECCION DE BIENVENIDA-->
+
+    <section id="welcome-section">
+        <div id="izquierda">
+            <div class="text-title">
+                <h1>Hi</h1>
+                <h3>I'm Alejandro Ontiveros</h3>
+                <h3>Web Developer.</h3>
+            </div>
+            <a href="#contact">contact me</a>
+        </div>
+
+        <div class="profile-image" id="derecha">
+            <img src="imgs/profile-image.png" alt="">
+        </div>
+    </section>
+
+
+
+    <section class="container about" id="about">
+        <h1>About my</h1>
+        <div class="about-me-info">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea placeat et magni quaerat? Iure explicabo, reprehenderit tenetur ea necessitatibus nisi magni. Explicabo harum ipsum odio velit voluptatem magnam fugit libero?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea placeat et magni quaerat? Iure explicabo, reprehenderit tenetur ea necessitatibus nisi magni. Explicabo harum ipsum odio velit voluptatem magnam fugit libero?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea placeat et magni quaerat? Iure explicabo, reprehenderit tenetur ea necessitatibus nisi magni. Explicabo harum ipsum odio velit voluptatem magnam fugit libero?</p>
+        </div>
+        <img src="img/dotted-shape.png" alt="">
+    </section>
+
+    <section class="container skill" id="skills">
+        <h1>Skills</h1>
+        <p class="skills-info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam ea obcaecati quos aspernatur quo repudiandae sunt accusantium architecto? Vel exercitationem repellat dolorum excepturi quis harum nam sit dicta, consequatur molestias.</p>
+        <h3>HTML / CSS / JavaScript</h3>
+    </section>
+
+    <!--PROYECTOS-->
+    <section class="container work" id="work">
+        <h1>Work</h1>
+        <div class="projects">
+            <article class="project-tile">
                 <h2>Tribute Page</h2>
-                <img src="/imgs/tribute.png" alt="Tribute Page">
+                <img src="./imgs/tribute.png" alt="Tribute Page">
                 <p id="pruebass">Jose Teodoro Morgado Pacheco</p>
-                <a id="profile-link" href="https://gandroide.github.io/tributePage/" target="_black">Ir al Tribute Page <i class="fas fa-angle-double-right"></i></a>
-            </div>
-            <div class="project-tile-2">
+                <a id="profile-link" href="https://github.com/gandroide" target="_black">Ir al Tribute Page <i class="fas fa-angle-double-right"></i></a>
+            </article>
+            <article class="project-tile-2">
                 <h2>Survey Form</h2>
-                <img src="/imgs/form.png" alt="Form Web">
+                <img src="./imgs/form.png" alt="Form Web">
                 <p id="pruebass">Formulario web para citas de Tatuajes</p>
-                <a id="profile-link" href="https://gandroide.github.io/Survey-Form/" target="_black"> ir a el survey form <i class="fas fa-angle-double-right"></i></a>
-            </div>
-            <div class="project-tile-3">
+                <a id="profile-link2" href="https://gandroide.github.io/Survey-Form/" target="_black"> ir a el survey form <i class="fas fa-angle-double-right"></i></a>
+            </article>
+            <article class="project-tile-3">
                 <h2>Product Landing Page</h2>
-                <img src="/imgs/inkthegallery.png" alt="Landing Page">
+                <img src="./imgs/inkthegallery.png" alt="Landing Page">
                 <p id="pruebass">Landing Page base para INKTHEGALLERY</p>
-                <a id="profile-link" href="https://gandroide.github.io/product-landing-page/" target="_black"> Product Landing Page <i class="fas fa-angle-double-right"></i></a>
-            </div>
-            <div class="project-tile-4">
+                <a id="profile-link3" href="https://gandroide.github.io/product-landing-page/" target="_black"> Product Landing Page <i class="fas fa-angle-double-right"></i></a>
+            </article>
+            <article class="project-tile-4">
                 <h2>Technical Documentation</h2>
-                <img src="/imgs/documentation.png" alt="Landing Page">
+                <img src="./imgs/documentation.png" alt="Landing Page">
                 <p id="pruebass">Documentacion tecnica para Git</p>
-                <a id="profile-link" href="https://gandroide.github.io/technical-documentation-page/" target="_black">Documentacion de Git <i class="fas fa-angle-double-right"></i></a>
-            </div>
+                <a id="profile-link4" href="https://gandroide.github.io/technical-documentation-page/" target="_black">Documentacion de Git <i class="fas fa-angle-double-right"></i></a>
+            </article>
+        </div> 
+    </section>
 
-        </section>
-
-    </div>
-    <script src="test.js"></script>
+    <section class="container contact" id="contact">
+        <h1>Contact</h1>
+        <form>
+            <input type="text" name="name" placeholder="Full Name">
+            <input type="email" placeholder="Email">
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+            <input type="submit">
+        </form>
+  
+        <footer>
+            <hr>
+            <p>2020 Copyright. All Right Deserved</p>
+        </footer>
+    </section>
 </body>
 </html>
