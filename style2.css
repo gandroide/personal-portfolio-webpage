@@ -1,0 +1,504 @@
+body {
+    background-color: #252627;
+    font-family: "PT Sans", sans-serif;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+
+}
+
+/* BARRA DE NAVEGACION */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0 2em 0 2em;
+    background-color: #181818;
+    color: #BEBEBE;
+    align-items: center;
+
+}
+
+.navbar ul {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navbar li {
+    margin-left: 30px;
+}
+
+.navbar a {
+    color: #BEBEBE;
+    text-transform: uppercase;
+    position: relative;
+    font-size: .9rem;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ED5565;
+}
+
+/* WELCOME SECTION */
+
+.text-title {
+    color: #fff;
+    font-size: 2rem;
+}
+
+#welcome-section {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 90vh;
+    align-items: center;
+}
+
+
+#welcome-section a {
+    padding: 12px 25px;
+    background-color: none;
+    border: 3px solid #ED5565;
+    color: #ED5565;
+    font-size: .8rem;
+    letter-spacing: 2px;
+    position: relative;
+    top: 80px;
+    overflow: hidden;
+    transition: .5s;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#welcome-section a:hover {
+    color: #fff;
+  }
+  
+#welcome-section a::before {
+    content: '';
+    background-color: #ED5565;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0%;
+    z-index: -1;
+    transition: .5s;
+}
+  
+#welcome-section a:hover::before {
+    height: 100%;
+}
+
+.profile-image img { 
+    width: 400px;
+}
+
+/* ABOUT ME*/
+
+.about {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #BEBEBE;
+    font-size: 1.4rem;
+}
+ /*TOMAR EN CUENTA PARA REPLICAR*/
+.about h1 {
+    display: flex;
+    font-size: 9rem;
+    z-index: 0;
+    opacity: .1;
+    /*activo con los media queries de esto*/
+    position: absolute;
+    align-self: start;
+    left: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.about-me-info {
+    display: flex;
+    max-width: 900px;
+    background-color: #252627;
+    box-shadow: 0 0 1.2rem rgba(0,0,0,.25);
+    padding: 10px 50px 10px 50px;
+    position: relative;
+    z-index: 1;
+    flex-direction: column;
+}
+/*TOMAR EN CUENTA PARA REPLICAR*/
+#skills {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill h1 {
+  text-align: right;
+  display: flex;
+  font-size: 9rem;
+  z-index: 0;
+  opacity: .1;
+  /*activo con los media queries de esto*/
+  position: absolute;
+  align-self: start;
+  right: 40px;
+  margin: 0;
+  padding: 0;
+  color: #BEBEBE;
+}
+
+.skill h3 {
+    text-align: center;
+    color: #ED5565;
+}
+
+.skills-info {
+    font-size: 1.4rem;
+    color: #BEBEBE;
+    max-width: 800px;
+    position: relative;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* PROYECTOS */
+
+.work {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #BEBEBE;
+    font-size: 1.4rem;
+    
+}
+.work h1 {
+    display: flex;
+    font-size: 9rem;
+    z-index: 0;
+    opacity: .1;
+    /*activo con los media queries de esto*/
+    position: absolute;
+    align-self: start;
+    left: 40px;
+    margin: 0;
+    padding: 0;
+    color: #BEBEBE;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #BEBEBE;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.projects img {
+    width: auto;
+    height: 200px;
+}
+
+.projects a {
+    color: #BEBEBE;
+    font-size: .9rem;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.projects a:hover {
+    color: #ED5565;
+    text-decoration: underline;
+}
+
+.projects article {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* CERTIFICACIONES */
+
+.certificaciones {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #BEBEBE;
+    font-size: 1.4rem;
+}
+
+.certificaciones h1 {
+    display: flex;
+    font-size: 9rem;
+    z-index: 0;
+    opacity: .1;
+    /*activo con los media queries de esto*/
+    position: absolute;
+    align-self: start;
+    left: 40px;
+    margin: 0;
+    padding: 0;
+    color: #BEBEBE;
+}
+
+.certificados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #BEBEBE;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.certificados img {
+    width: auto;
+    height: 500px;
+}
+
+.responsive {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.responsive a {
+    text-decoration: none;
+    color: #BEBEBE;
+    font-size: large;
+    padding-top: 10px;
+}
+
+.responsive a:hover {
+    color: #ED5565;
+}
+/*CONTACTO*/
+
+.contact {
+    height: 40vh;
+    color: #BEBEBE; 
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.contact h1 {
+    text-align: right;
+    display: flex;
+    font-size: 9rem;
+    z-index: 0;
+    opacity: .1;
+    /*activo con los media queries de esto*/
+    position: relative;
+    right: 40px;
+    margin: 0;
+    padding: 0;
+    color: #BEBEBE;
+    justify-content: flex-end;
+    
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#redes1 {
+    display: flex;
+}
+
+#redes1 i {
+    padding-right: 0.5em;
+}
+
+#redes2 {
+    display: flex;
+}
+
+#redes2 i {
+    padding-right: 0.5em;
+}
+
+.redes a {
+    text-decoration: none;
+    color: #BEBEBE;
+}
+
+.redes a :hover {
+    color: #ED5565;
+}
+
+ 
+footer hr {
+    border: 2px solid #707070;
+    margin-top: 80px;
+    
+}
+  
+footer p {
+    text-align: center;
+    color: #707070;
+    font-size: 1.2rem;
+    padding: 10px 0;
+}
+  
+
+@media (max-width: 1366px) {
+    .profile-image img {
+        width: 350px;
+        margin-top: 5em;
+    }
+
+    #welcome-section a {
+        top: 20px;
+    }
+
+    /* ABOUT ME*/
+
+    .about h1 {
+        font-size: 8rem;
+    }
+
+    /* SKILL */
+
+    .skill h1 {
+        font-size: 8rem;
+    }
+
+    /* PROYECTOS */
+
+    .projects {
+        max-height: 60vh;
+        font-size: 0.8rem;
+    }
+
+    .projects img {
+        height: 150px;
+    }
+
+    /* CERTIFICACIONES */
+
+    .certificaciones h1 {
+        font-size: 8rem;
+    }
+    .certificados {
+        max-height: 60vh;
+        font-size: 0.8rem;
+    }
+    .certificados img {
+        height: 350px;
+        padding-top: 10%;
+    }
+
+}
+
+
+
+
+
+@media (max-width: 600px) {
+    .navbar {
+        padding: 0;
+        margin: 0;
+    }
+
+    .navbar li {
+        margin-left: 15px;
+    }
+    
+    .lgo {
+        display: none;
+    }
+
+    .profile-image {
+        display: none;
+    }
+
+    #welcome-section {
+        text-align: center;
+        font-size: larger;
+    }
+
+    
+    .text-title {
+        font-size: 1.5rem;
+    }
+
+    /* ABOUT ME */
+
+    .about h1 {
+        font-size: 3rem;
+        left: 10px;
+    }
+
+    .about-me-info {
+        max-width: 250px;
+        padding: 10px 20px 10px 20px;
+        text-align: center;
+        font-size: large;
+    }
+
+    /* SKILL */
+
+    .skill h1 {
+        font-size: 3rem;
+        right: 20px;
+    }
+
+    .skills-info {
+        max-width: 300px;
+        text-align: center;
+        font-size: large;
+    }
+
+    /* WORK */
+    .work {
+        display: none;
+    }
+
+    /* CERTIFICACIONES */
+
+    .certificaciones h1 {
+        font-size: 3rem;
+        left: 20px;
+
+    }
+    .certificaciones {
+        max-height: 60vh;
+        font-size: 0.8rem;
+    }
+    .certificados img {
+        height: 100px;
+        padding-top: 10%;
+    }
+    
+
+    /* CONTACT */
+
+    .contact h1 {
+        font-size: 3rem;
+        right: 20%;
+    }
+
+    #redes1 i {
+        padding-right: 0.1em;
+    }
+
+    #redes2 i {
+        padding-right: 0.1em;
+    }
+
+}

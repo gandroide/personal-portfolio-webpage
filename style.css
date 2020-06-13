@@ -3,13 +3,14 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: "PT Sans", sans-serif;
-    
     background-color: #252627;
 }
 
+
+
 html {
     scroll-behavior: smooth;
-  }
+}
 
 nav ul,
 .main-info-section,
@@ -53,6 +54,11 @@ a {
     font-size: .9rem;
     text-transform: uppercase;
     position: relative;
+    color: #BEBEBE;
+}
+
+a:hover {
+    color: #ED5565;
 }
 
 .text-title {
@@ -62,7 +68,7 @@ a {
 }
 
 #welcome-section {
-    padding: 0 5em 0 5em;/*aun no se si dejar esto*/
+    padding: 0 15em 0 15em;/*aun no se si dejar esto*/
     display: flex;
     justify-content: space-between;
     height: 100vh;
@@ -111,8 +117,12 @@ a {
     margin-top: 15em;
 }
 
+
+/*SOBRE MI*/
+
+
 .about {
-    height: 100vh;
+    height: 90vh;
     margin-top: 100px;
     padding: 0 5em 0 5em;/*aun no se si dejar esto*/
 }
@@ -142,8 +152,11 @@ a {
     color: #BEBEBE;
 }
 
+
+/*HABILIDADES*/
+
 #skills {
-    height: 100vh;
+    height: 90vh;
 
 }
 .skill {
@@ -173,15 +186,20 @@ a {
     margin-bottom: 50px;
 }
 
+/*PROYECTOS*/
+
 .work {
     padding: 0 5em 0 5em;/*aun no se si dejar esto*/
-    height: 100vh;
+    height: 90vh;
 }
 
 .projects {
-    display: grid;
+    /*display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
+    gap: 25px;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     color: #BEBEBE;
     text-decoration: none;
 }
@@ -190,10 +208,13 @@ a {
     color: #BEBEBE;
     font-size: .9rem;
     text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
 }
 
 .projects a:hover {
     color: #ED5565;
+    text-decoration: underline;
 }
 
 .projects img {
@@ -203,57 +224,42 @@ a {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*CONTACTO Y FOOTER*/
 
 
 
 .contact {
-    padding: 0 5em 0 5em;/*aun no se si dejar esto*/
-    height: 100vh;
+    padding: 5em 5em 0 5em;/*aun no se si dejar esto*/
+    height: 30vh;
+    color: #BEBEBE
 }
 
-form input,
-form textarea {
-    display: block;
-    width: 500px;
-    padding: 20px;
-    background-color: #252627;
-    border: 3px solid #707070;
-    margin: 20px 0;
-    outline: none;
-    font-size: 1.2rem;
-    color: #fff;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    transform: translateX(-50%);
+
+
+
+
+#redes1 {
+    display: flex;
 }
-  
-form input:last-child {
-    width: 150px;
-    background-color: #ED5565;
-    border: none;
-    cursor: pointer;
+
+#redes1 i {
+    padding-right: 1em;
 }
-  
+
+#redes2 {
+    display: flex;
+}
+
+#redes2 i {
+    padding-right: 1em;
+}
+
+
+ 
 footer hr {
     border: 2px solid #707070;
     margin-top: 80px;
+    
 }
   
 footer p {
@@ -263,183 +269,119 @@ footer p {
     padding: 10px 0;
 }
   
-  
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-.container {
-    width: 90%;
-    margin: auto;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-}
-
-#welcome-section {
-
-    display: flex;
+@media (max-width: 1366px) {
+    #welcome-section {
+        padding: 0 5em 0 5em;
+        height: 100vh;
+    }
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .work {
+        height: 100vh;
+    }
+    #izquierda {
+        margin-top: 5em;
+    }
+    .profile-image img {
+        width: 450px;
+        margin-top: 5em;
+    }
+    .contact {
+        padding-top: 20em;
+    }
 
 }
 
-#projects {
-
-    display: flex;
-    height: 30em;
-}
-
-hr {
-    margin: 10px 0;
-  }
-
-
- header {
+@media (max-width: 1000px) {
+    body, html {
+        margin: 0;
+        padding: 0;
+    }
     
- }
-#navbar {
+    .about h1,
+    .work h1 {
+        font-size: 6rem;
+    }
+}
 
+
+
+@media (max-width: 840px) {
+    html {
+        padding: 0;
+    }
+    #welcome-section {
+        padding: 5em 5em 0 5em;
+
+    }
+    .about {
+        height: 20vh;
+    }
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .work {
+        height: 100vh;
+    }
+    #izquierda {
+        margin-top: 5em;
+    }
+    .profile-image img {
+        width: 250px;
+        margin-top: 5em;
+    }
+    .contact {
+        padding-top: 20em;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        width: 100vh;
+    }
+
+    .about-me-info {
+        max-width: 100vh;
+        background-color: #252627;
+        box-shadow: 0 0 1.2rem rgba(0,0,0,.25);
+        padding: 50px;
+        position: relative;
+        top: -70px;
+
+    }
+    .profile-image img {
+        display: none;
+    }
+
+
+    
+    nav ul,
+    .main-info-section,
+    .work-category {
     display: flex;
-    height: 5em;
-    justify-content: flex-end;
-    font-size: 20px;
-    position:fixed;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 0.5em;
+    }
 
-    width: 100vh;
+    .navbar {
+        padding: 0 1em 0 1em;/*aun no se si dejar esto*/
+        justify-content: flex-start;
+    }
+
+    header h1 {
+        display: none;
+    }
+
 }
 
-ul {
-    list-style: none;
+@media (max-width: 400px) {
+
 }
 
-#navbar ul {
-    display: flex;
-    list-style: none;
-}
+@media (max-width: 300px) {
 
-#navbar ul li {
-    padding: 10px;
 }
-
-#navbar ul li a{
-    padding: 5px;   
-}
-
-
-#navbar ul li a:hover{
-    border-bottom: 2px solid #ffffff;
-}
-
-#welcome-section {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background: url("./imgs/coding-computer1.jpg") no-repeat center center/cover;
-    align-items: center;
-    justify-content: flex-end;
-    padding-bottom: 30px;
-    margin-bottom: 20px;
-}
-
-#welcome-section h1,
-#welcome-section p{
-    margin-bottom: 10px;
-}
-
-.btn {
-    cursor: pointer;
-    display: inline-block;
-    border: 0;
-    font-weight: bold;
-    padding: 10px 20px;
-    background: #262626;
-    color: #fff;
-    font-size: 15px;
-    border: 1px solid #fff;
-    margin-bottom: 30px;
-}
-
-.btn:hover {
-    opacity: .5;
-}
-
-#projects {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 25px; 
-    margin: 30px 0px;
-}
-
-#projects img {
-    width: 100%;
-    height: 180px;
-}
-
-#projects a {
-    padding: 10px 0px;
-    text-transform: uppercase;
-    display: inline-block;
-    font-weight: bold;
-}
-
-#projects a:hover{
-    border-bottom: 2px solid #ffffff;
-}
-*/
